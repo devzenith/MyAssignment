@@ -1,0 +1,27 @@
+package com.ms.bootcamp.fetchcurrency.service;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.ms.bootcamp.fetchcurrency.model.CurrencyResponse;
+import com.ms.bootcamp.fetchcurrency.model.Request;
+import com.ms.bootcamp.fetchcurrency.model.Response;
+
+public class CurrencyService {
+	
+	@Autowired
+	CurrencyInvetoryms inventoryms;
+	
+	public Response getComputedCurrency(Request request) {
+		
+		CurrencyResponse currencyresponse= inventoryms.fetchConversionFactor(request);
+		
+		Response response=null;
+		
+		
+		
+		
+		
+		return response;
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.ms.bootcamp.fetchcurrency.service;
+import com.ms.bootcamp.fetchcurrency.model.CurrencyResponse;
+import com.ms.bootcamp.fetchcurrency.model.Request;
+
+public class CurrencyService {
+	
+	
+	public CurrencyResponse getComputedCurrency(Request request) {
+		
+		CurrencyResponse response=null;
+		
+		return response;
+		
+	}
+
+}

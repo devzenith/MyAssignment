@@ -1,0 +1,62 @@
+package com.example.boot.demo.model;
+
+import java.util.Date;
+
+public class GreetingBean {
+	
+	private String greetingName;
+	private String salutation;
+	private Date greetAt;
+	private String name;
+
+	public String composeGreet() {
+		return greetingName + "," + salutation + " " + name + ". How are you @" + greetAt;
+	}
+
+	public GreetingBean(String greetingName, String salutation, Date greetAt) {
+		super();
+		this.greetingName = greetingName;
+		this.salutation = salutation;
+		this.greetAt = greetAt;
+	}
+
+	public GreetingBean() {
+		super();
+		this.greetingName = "Hello!";
+		this.salutation = "Mr.";
+		this.greetAt = new Date();
+	}
+
+	public String getGreetingName() {
+		return greetingName;
+	}
+
+	public void setGreetingName(String greetingName) {
+		this.greetingName = greetingName;
+	}
+
+	public String getSalutation() {
+		return salutation;
+	}
+
+	public void setSalutation(String salutation) {
+		this.salutation = salutation;
+	}
+
+	public Date getGreetAt() {
+		return greetAt;
+	}
+
+	public void setGreetAt(Date greetAt) {
+		this.greetAt = greetAt;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+}

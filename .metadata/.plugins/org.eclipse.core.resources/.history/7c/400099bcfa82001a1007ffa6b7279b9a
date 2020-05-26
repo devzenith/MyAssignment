@@ -1,0 +1,16 @@
+package com.example.boot.demo.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/greet")
+public class GreetingController {
+	
+	@RequestMapping("/default")
+	public String defaultGreet() {
+		
+		return "Hello There";
+	}
+
+}

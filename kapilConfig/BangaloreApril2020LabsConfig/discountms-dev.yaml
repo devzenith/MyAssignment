@@ -1,0 +1,12 @@
+discountdata.discountmap.FURNISHING: 9.35
+discountdata.discountmap.KITCHENELECTRONIC: 11.22
+discountdata.discountmap.MEDICALEQUIPMENT: 5.0
+discountdata.discountmap.MOBILEPHONE: 5.0
+discountdata.discountmap.MUSICINSTRUMENT: 5.9
+discountdata.discountmap.TOY: 9.99
+
+
+zipkin.url: http://zipkin:9411/
+rabbitmq.host: rabbitmq-master
+rabbitmq.port: "5672"
+discountms.eureka.url: http://eureka:8761/eureka

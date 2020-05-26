@@ -1,0 +1,16 @@
+package com.example.boot.demo.service;
+
+import org.springframework.stereotype.Component;
+
+import com.example.boot.demo.model.Greeting;
+
+@Component
+public class GreetingService {
+
+	public String getGreetingForName(String name) {
+		Greeting greet = new Greeting();
+		greet.setName(name);
+		return greet.composeGreet();
+	}
+
+}

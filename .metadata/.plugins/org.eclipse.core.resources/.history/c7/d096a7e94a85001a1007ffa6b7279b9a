@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      uri: ${[prdocutms.config.server.url:http://localhost:8888}
+      fail-fast: true
+      
+  application:    name: productms
+  profiles:    active: dev    
+   
+      

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;CurrencyResponse.java&apos; to &apos;FetchCurrencyMs/src/main/java/com.ms.bootcamp.fetchcurrency.model&apos;&#x0D;&#x0A;- Original project: &apos;CurrencyInventoryMs&apos;&#x0D;&#x0A;- Destination element: &apos;FetchCurrencyMs/src/main/java/com.ms.bootcamp.fetchcurrency.model&apos;&#x0D;&#x0A;- Original element: &apos;com.ms.bootcamp.currencyinventory.model.CurrencyResponse.java&apos;" description="Copy compilation unit" destination="=FetchCurrencyMs/src\/main\/java&lt;com.ms.bootcamp.fetchcurrency.model" element1="/src\/main\/java&lt;com.ms.bootcamp.currencyinventory.model{CurrencyResponse.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1588567657742" units="1" version="1.0"/>
+</session>

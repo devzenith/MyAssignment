@@ -1,0 +1,29 @@
+server:
+  port: 9091
+  
+spring:
+  mvc:
+    view:
+      suffix: .html
+      prefix: /
+  h2:
+    console:
+      enabled: true
+      path: /h2
+      settings:
+        web-allow-others: true
+  datasource:
+    url: ${productms.datasource.url}
+    username: ${productms.datasource.username}
+    password: ${productms.datasource.password}
+  jpa:
+    show-sql: true
+  application:
+    name: productms
+#  profiles:
+#    active: dev    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

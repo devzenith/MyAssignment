@@ -1,0 +1,42 @@
+--- 
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  labels: 
+    app: fetchcurrencyms
+    version: v1
+  name: fetchcurrencyms
+spec: 
+  strategy: # Default, so usually not specified
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1  # specifies the maximum number of Pods that can be created over the desired number of Pods
+      maxUnavailable: 25% #specifies the maximum number of Pods that can be unavailable during the update process
+  replicas: 1
+  selector: 
+    matchLabels: 
+      app: fetchcurrencyms
+      version: v1
+  template: 
+    metadata: 
+      labels: 
+        app: fetchcurrencyms
+        version: v1
+
+    spec: 
+
+      containers: 
+        - 
+          image: "devzenith/fetchcurrencyms:1"
+          imagePullPolicy: Always
+          name: fetchcurrencyms
+          ports: 
+#          - containerPort: 8081   
+          - name: httpport
+            containerPort: 9095
+            hostPort: 9095   
+          env:
+            - name: fetchcurrencyms.config.server.url
+              value: http://configserver:8888/  
+      nodeSelector:
+        type: node02

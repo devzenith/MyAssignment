@@ -1,0 +1,28 @@
+package com.ms.bootcamp.currencyinventory.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ms.bootcamp.currencyinventory.model.Currency;
+import com.ms.bootcamp.currencyinventory.repo.CurrencyRepository;
+
+@Service
+public class CurrencyInventoryService {
+	
+	@Autowired
+	CurrencyRepository repo;
+	
+	public List<Currency> getAllConversionFactors(){
+		
+		 return repo.findAll();		
+		
+	}
+	
+	public Currency getConvfactorByCountry(String isoCode) {
+		
+		
+	}
+
+}

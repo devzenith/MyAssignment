@@ -1,0 +1,5 @@
+package com.ms.bootcamp.currencyinventory.controller;
+
+public class CurrencyInventoryController {
+
+}

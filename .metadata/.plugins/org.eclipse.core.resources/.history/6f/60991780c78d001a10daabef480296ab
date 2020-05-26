@@ -1,0 +1,26 @@
+package com.ms.bootcamp.fetchcurrency.service;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.ms.bootcamp.fetchcurrency.model.CurrencyResponse;
+import com.ms.bootcamp.fetchcurrency.model.Request;
+
+
+public class CurrencyService {
+	
+	@Autowired
+	CurrencyInvetoryms inventoryms;
+	
+	
+	public CurrencyResponse getComputedCurrency(Request request) {
+		
+		CurrencyResponse response= inventoryms.fetchConversionFactor(request);
+		
+		response.setStatusMessage("Amount calculated for country Code " + request.getCountryCode());		
+		
+		return response;
+		
+	}
+	
+	
+
+}

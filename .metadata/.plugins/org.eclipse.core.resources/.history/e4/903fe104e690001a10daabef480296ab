@@ -1,0 +1,5 @@
+package com.ms.bootcamp.currencyinventory.model;
+
+public class StatusResponse {
+
+}

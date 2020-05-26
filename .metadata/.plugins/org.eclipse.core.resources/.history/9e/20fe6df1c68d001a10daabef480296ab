@@ -1,0 +1,5 @@
+package com.ms.bootcamp.fetchcurrency.service;
+
+public class CurrencyInventorymsfallback {
+
+}

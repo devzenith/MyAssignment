@@ -1,0 +1,36 @@
+package com.example.boot.demo.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.boot.demo.model.Greeting;
+import com.example.boot.demo.service.GreetingService;
+
+@RestController
+@RequestMapping("/greet")
+public class GreetingController {
+	
+	@Autowired
+	GreetingService greetingService;
+	
+	
+	@RequestMapping(path="/default", method = RequestMethod.GET)
+	public String defaultGreet() {
+		
+		return "Hello There";
+	}
+	
+	@RequestMapping(path = "/object/default", method = RequestMethod.GET)
+	public Greeting defaultObjectGreeting() {
+		return new Greeting();
+	}
+
+	@RequestMapping(path = "/{name}", method = RequestMethod.GET)
+	public String nameGreet(@PathVariable String name) {
+		return greetingService.getGreetingForName(name);
+	}
+
+}

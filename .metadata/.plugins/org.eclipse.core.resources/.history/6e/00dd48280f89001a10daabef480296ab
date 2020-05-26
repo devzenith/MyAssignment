@@ -1,0 +1,24 @@
+package com.ms.bootcamp.currencyinventory.model;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Currency {
+	
+	private Integer id;
+	private String countryCode;
+	private double conversionFactor;
+	public Currency() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Currency(Integer id, String countryCode, double conversionFactor) {
+		super();
+		this.id = id;
+		this.countryCode = countryCode;
+		this.conversionFactor = conversionFactor;
+	}
+	
+	
+
+}

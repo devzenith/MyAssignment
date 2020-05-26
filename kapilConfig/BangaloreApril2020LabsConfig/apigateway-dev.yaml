@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: productms
+        uri: lb://productms
+        predicates:
+        - Path=/product/v4/**
+        
+
+zipkin.url: http://zipkin:9411/
+rabbitmq.host: rabbitmq-master
+rabbitmq.port: "5672"
+apigateway.eureka.url: http://eureka:8761/eureka

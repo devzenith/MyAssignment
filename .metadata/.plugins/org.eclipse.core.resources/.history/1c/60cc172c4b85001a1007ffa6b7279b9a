@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      uri: ${[discountms.config.server.url:http://localhost:8888}
+      fail-fast: true
+      
+  application:    name: discountms
+  profiles:    active: dev    
+   
+      

@@ -1,0 +1,39 @@
+package com.ms.bootcamp.fetchcurrency.service;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.ms.bootcamp.fetchcurrency.model.CurrencyResponse;
+import com.ms.bootcamp.fetchcurrency.model.Request;
+import com.ms.bootcamp.fetchcurrency.model.Response;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+
+public class CurrencyService {
+	
+	@Autowired
+	CurrencyInvetoryms inventoryms;
+	
+	@HystrixCommand(fallbackMethod = "amountFallback")
+	public Response getComputedCurrency(Request request) {
+		
+		CurrencyResponse currencyresponse= inventoryms.fetchConversionFactor(request);
+		
+		Response response=new Response();
+		response.setComputedAmount(currencyresponse.getAmount());
+		response.setCountryCode(request.getCountryCode());
+		response.setStatusMessage("Amount calculated for country Code " + request.getCountryCode());		
+		
+		return response;
+		
+	}
+	
+	public Response amountFallback(Request request) {
+		
+		Response response=new Response();
+		response.setComputedAmount(0.0);
+		response.setCountryCode(request.getCountryCode());
+		response.setStatusMessage("Amount not for country Code " + request.getCountryCode());	
+		
+		return response;
+		
+	}
+
+}

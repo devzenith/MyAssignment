@@ -1,0 +1,28 @@
+package com.ms.bootcamp.fetchcurrency.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ms.bootcamp.fetchcurrency.model.Response;
+import com.ms.bootcamp.fetchcurrency.model.Request;
+import com.ms.bootcamp.fetchcurrency.service.CurrencyService;
+
+@RestController
+@RequestMapping("/v1")
+public class CurrencyController {
+	
+	@Autowired
+	CurrencyService service;
+	
+	@GetMapping("/getcurrency")
+	public Response getComputedCurrency(@RequestBody Request request) {
+		
+			
+		return service.getComputedCurrency(request);
+		 
+	}
+
+}

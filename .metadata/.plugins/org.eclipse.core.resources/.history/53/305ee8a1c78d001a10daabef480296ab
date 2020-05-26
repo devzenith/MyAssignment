@@ -1,0 +1,20 @@
+package com.ms.bootcamp.fetchcurrency.service;
+
+import com.ms.bootcamp.fetchcurrency.model.CurrencyResponse;
+import com.ms.bootcamp.fetchcurrency.model.Request;
+
+public class CurrencyInventorymsfallback implements CurrencyInvetoryms{
+
+	@Override
+	public CurrencyResponse fetchConversionFactor(Request request) {
+		// TODO Auto-generated method stub
+		
+		CurrencyResponse curresponse= new CurrencyResponse("Fallback Happened","circuit breaker initiated",0.0);
+		
+		
+		return null;
+	}
+	
+	
+
+}

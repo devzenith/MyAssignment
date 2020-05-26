@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;CurrencyInventoryMs/src/main/resources&apos;&#x0D;&#x0A;- Original project: &apos;Productms&apos;&#x0D;&#x0A;- Destination element: &apos;CurrencyInventoryMs/src/main/resources&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     application.yaml&#x0D;&#x0A;     bootstrap.yaml" description="Copy files" destination="=CurrencyInventoryMs/src\/main\/resources" element1="src/main/resources/application.yaml" element2="src/main/resources/bootstrap.yaml" files="2" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1588048525472" units="0" version="1.0"/>
+</session>

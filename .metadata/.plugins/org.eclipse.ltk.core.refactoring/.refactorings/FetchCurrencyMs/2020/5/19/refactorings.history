@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.ms.bootcamp.fetchcurrency.model.CurrencyResponse&apos; to &apos;Response&apos;&#x0D;&#x0A;- Original project: &apos;FetchCurrencyMs&apos;&#x0D;&#x0A;- Original element: &apos;com.ms.bootcamp.fetchcurrency.model.CurrencyResponse&apos;&#x0D;&#x0A;- Renamed element: &apos;com.ms.bootcamp.fetchcurrency.model.Response&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;CurrencyResponse&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.ms.bootcamp.fetchcurrency.model{CurrencyResponse.java[CurrencyResponse" matchStrategy="1" name="Response" qualified="false" references="true" similarDeclarations="false" stamp="1588567653955" textual="false" version="1.0"/>
+</session>

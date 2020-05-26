@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      uri: ${local.server.url:http://localhost:8888}
+      fail-fast: true
+      
+  application:    name: fetchcurrencyms
+  profiles:    active: dev    
+   
+      

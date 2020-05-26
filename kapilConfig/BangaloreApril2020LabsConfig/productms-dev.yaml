@@ -1,0 +1,12 @@
+productms.datasource.url: jdbc:h2:mem:productmsDb;DB_CLOSE_DELAY=-1
+productms.datasource.username: sa
+productms.datasource.password:
+productms.datasource.driver: org.h2.Driver
+
+zipkin.url: http://zipkin:9411/
+rabbitmq.host: rabbitmq-master
+rabbitmq.port: "5672"
+productms.eureka.url: http://eureka:8761/eureka
+
+
+greeting: Hello product
